@@ -24,9 +24,10 @@
 <style id="print-integrity-v71">@media print{#sheet{width:188mm!important;max-width:188mm!important;overflow:visible!important}#sheet,#sheet *{print-color-adjust:exact!important;-webkit-print-color-adjust:exact!important}.question-card,.section-start,.text-block,.table-block,.image-block,.match-block,.placement-block,.cover-text-block,.tp-grid,.tp-grid tr,.image-item,.match-card{break-inside:avoid!important;page-break-inside:avoid!important}.section-title{break-after:avoid!important;page-break-after:avoid!important}#sheet>.section-start,#sheet>.question-card,#sheet>[data-edit-block]{zoom:var(--print-block-scale,1)}.tp-edition-watermark{left:auto!important;right:0!important;text-align:right!important;background:transparent!important}}</style>
 <style id="text-tools-v73">.tp-font-colours[hidden]{display:none!important}.tp-font-colours{flex-basis:100%;margin:3px 0 4px}.tp-font-toolbar [data-font-colours-toggle]{width:auto;padding:0 8px}.tp-aligned-text{width:100%}</style>
 <style id="catalogue-collapse-v74">@media screen{.catalog{position:relative}.catalog>.panel-head h2{padding-right:35px}.catalogue-toggle{position:absolute;top:12px;right:10px;z-index:4;width:30px;min-height:30px;border:1px solid #9bb8ce;border-radius:5px;background:#eef6fc;color:#175b97;font-weight:700;font-size:22px;cursor:pointer}.catalogue-toggle:focus-visible{outline:2px solid #175b97;outline-offset:2px}.workspace.catalogue-collapsed{grid-template-columns:42px minmax(350px,480px) minmax(420px,1fr)}.workspace.catalogue-collapsed>.catalog>.panel-head,.workspace.catalogue-collapsed>.catalog>.mission-list{display:none}.workspace.catalogue-collapsed>.catalog{overflow:hidden}.workspace.catalogue-collapsed .catalogue-toggle{right:6px;writing-mode:vertical-rl;font-size:13px;padding:8px 5px;width:30px;min-height:110px}}@media print{.catalogue-toggle{display:none!important}}</style>
+<style id="catalogue-scroll-v75">@media screen{.workspace>.catalog{display:flex;flex-direction:column;min-height:0;overflow:hidden}.workspace>.catalog>.panel-head{flex:0 0 auto;position:relative;top:auto;overflow:visible}.workspace>.catalog>.mission-list{flex:1 1 0;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-gutter:stable}.workspace>.catalog>.catalogue-toggle{position:absolute;top:12px;right:10px;z-index:5}.workspace.catalogue-collapsed>.catalog>.catalogue-toggle{right:6px}}</style>
 </head>
 <body>
-<header class="app"><div><strong>Éditeur de TP</strong><br><small>Bac Pro Maintenance des véhicules · V74 — photothèque séparée · 2 TP de synthèse intégrés</small></div><div class="spacer"></div><div class="top-actions"><button type="button" class="btn" id="undoTpBtn" disabled title="Annuler la dernière modification">↶ Retour</button><button class="btn" id="importBtn">Importer JSON</button><button class="btn" id="settingsBtn">Paramètres</button><button class="btn" id="photoLibraryBtn">Photothèque</button><button class="btn" id="updatePhotoBtn">Mettre à jour la photothèque</button><button class="btn" id="exportBtn">Exporter ce TP</button><button class="btn" id="exportAllBtn">Exporter le catalogue</button><button class="btn primary" id="printBtn">PDF / Imprimer</button></div><div class="status" id="saveStatus">Chargement…</div></header>
+<header class="app"><div><strong>Éditeur de TP</strong><br><small>Bac Pro Maintenance des véhicules · V75 — photothèque séparée · 2 TP de synthèse intégrés</small></div><div class="spacer"></div><div class="top-actions"><button type="button" class="btn" id="undoTpBtn" disabled title="Annuler la dernière modification">↶ Retour</button><button class="btn" id="importBtn">Importer JSON</button><button class="btn" id="settingsBtn">Paramètres</button><button class="btn" id="photoLibraryBtn">Photothèque</button><button class="btn" id="updatePhotoBtn">Mettre à jour la photothèque</button><button class="btn" id="exportBtn">Exporter ce TP</button><button class="btn" id="exportAllBtn">Exporter le catalogue</button><button class="btn primary" id="printBtn">PDF / Imprimer</button></div><div class="status" id="saveStatus">Chargement…</div></header>
 <main class="workspace">
  <aside class="panel catalog"><button type="button" id="catalogueToggle" class="catalogue-toggle" aria-expanded="true" aria-controls="missionList search" title="Replier le catalogue" aria-label="Replier le catalogue">‹</button><div class="panel-head"><h2>Catalogue <span id="missionCount"></span></h2><input class="search" id="search" placeholder="Chercher une mission…" aria-label="Chercher une mission"></div><div class="mission-list" id="missionList"></div></aside>
  <section class="panel editor"><h2 id="editorTitle">Mission</h2><p class="intro-note" id="editorSource"></p><div class="tabs"><button id="tabMission" class="active">Présentation</button><button id="tabQuestions">Contenu</button></div>
@@ -306,9 +307,9 @@ window.addEventListener('beforeprint',fitPrintBlocks);window.addEventListener('a
 </script>
 <script id="catalogue-collapse-runtime-v74">function toggleCatalogue(){const workspace=document.querySelector('.workspace'),button=document.getElementById('catalogueToggle'),collapsed=workspace.classList.toggle('catalogue-collapsed');button.setAttribute('aria-expanded',String(!collapsed));button.textContent=collapsed?'› Catalogue':'‹';button.title=collapsed?'Ouvrir le catalogue':'Replier le catalogue';button.setAttribute('aria-label',button.title);button.focus()}document.getElementById('catalogueToggle').addEventListener('click',toggleCatalogue);</script>
 </body></html>
-<script id="editor-v20-compat-v118">window.TP_EDITOR_COMPAT={editorVersion:'V74',targetSuite:'V197',schema:'evaluation.tp.v1',professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',reader:'Lecteur_TP_Eleve_V197.html'};console.info('Editeur TP V55 — compatible suite V197');</script>
+<script id="editor-v20-compat-v118">window.TP_EDITOR_COMPAT={editorVersion:'V75',targetSuite:'V197',schema:'evaluation.tp.v1',professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',reader:'Lecteur_TP_Eleve_V197.html'};console.info('Editeur TP V55 — compatible suite V197');</script>
 
-<!-- Suite V197 — intégration officielle de l'Éditeur V74 photothèque séparée -->
+<!-- Suite V197 — intégration officielle de l'Éditeur V75 photothèque séparée -->
 <script id="editor-suite-v197">
 (function(){
 'use strict';
@@ -316,7 +317,7 @@ window.TP_SUITE_V197={
   suite:'Évaluation · Charge Atelier · TP · Correction',
   version:'V197',
   role:'EDITEUR',
-  editorVersion:'V74',
+  editorVersion:'V75',
   projectSchema:'evaluation.tp.v1',
   distributionFormat:'FDMAHY_TP_SYSTEM/4.1',
   professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',
@@ -324,18 +325,18 @@ window.TP_SUITE_V197={
   photoLibrary:'Phototheque_Atelier_TP.js'
 };
 window.TP_EDITOR_COMPAT={
-  editorVersion:'V74',targetSuite:'V197',schema:'evaluation.tp.v1',
+  editorVersion:'V75',targetSuite:'V197',schema:'evaluation.tp.v1',
   professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',
   reader:'Lecteur_TP_Eleve_V197.html',photoLibrary:'Phototheque_Atelier_TP.js'
 };
 function stamp(){
-  document.title='Éditeur de TP V74 — Suite V197 — Bac Pro Maintenance des véhicules';
+  document.title='Éditeur de TP V75 — Suite V197 — Bac Pro Maintenance des véhicules';
   const s=document.querySelector('header.app small');
-  if(s)s.textContent='Bac Pro Maintenance des véhicules · V74 — photothèque séparée · 2 TP de synthèse intégrés · Suite V197';
+  if(s)s.textContent='Bac Pro Maintenance des véhicules · V75 — photothèque séparée · 2 TP de synthèse intégrés · Suite V197';
   const b=document.getElementById('exportBtn');
   if(b){b.textContent='Exporter pour le Portail TP';b.title='Projet evaluation.tp.v1 compatible Portail TP V197';}
 }
 stamp();setTimeout(stamp,350);
-console.info('Suite V197 : Éditeur V74 photothèque séparée intégré.');
+console.info('Suite V197 : Éditeur V75 photothèque séparée intégré.');
 })();
 </script>
