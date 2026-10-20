@@ -70,7 +70,16 @@
 <style id="multi-cell-v109">#questionEditor .tp-multicell-tools[hidden]{display:none!important}.tp-multicell-tools{border:2px solid #2680b9;border-radius:10px;background:#eef7ff;padding:12px;margin:12px 0}.tp-multicell-row{display:flex;flex-wrap:wrap;align-items:center;gap:9px}.tp-multicell-row label{display:flex;flex-direction:column;gap:4px;font-size:12px}.tp-multicell-row button{height:32px;border:1px solid #a6c3d9;border-radius:6px;background:white;cursor:pointer}.tp-multicell-tools [aria-pressed=true]{outline:2px solid #176497;outline-offset:2px}.tp-multicell-palette{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tp-multicell-palette button{background:var(--swatch);width:25px;height:25px;border:1px solid #9aa9b5;border-radius:5px;cursor:pointer}#questionEditor.tp-cell-multi-mode .table-edit .tp-font-toolbar{display:none!important}#questionEditor .table-edit td.tp-cell-selected{background:#dfedff!important;outline:2px solid #287fba;outline-offset:-2px}#sheet td.tp-cell-selected,#sheet th.tp-cell-selected{box-shadow:inset 0 0 0 2px #287fba!important;}.tp-cell-dragging,.tp-cell-dragging *{user-select:none!important;cursor:cell!important}@media print{#sheet .tp-cell-selected{box-shadow:none!important;outline:none!important;}}</style>
 <style id="preview-delete-v110">#sheet:focus{outline:none}#sheet:focus-visible{outline:2px dashed #4887ad;outline-offset:4px}#sheet .preview-delete-selected{outline:3px solid #c67a16!important;outline-offset:3px}@media print{#sheet,#sheet .preview-delete-selected{outline:none!important}}</style>
 <style id="fin-tp-style">.fin-tp-label{font-weight:800;font-size:12px;letter-spacing:.06em;color:#175b97;margin-bottom:5px}.true-false-block .tf-grid{margin-top:8px}</style><style id="observation-style">.observation-answer{display:block;width:100%;box-sizing:border-box;min-height:80px;resize:vertical;padding:10px;border:1px solid #a9c8d8;border-radius:7px;line-height:1.5;font:inherit;white-space:pre-wrap}@media print{.observation-answer{resize:none;overflow:visible}}</style><style id="tp-codification-v117">
-.tp-code-assistant{background:#f0f7fc;border:1px solid #bdd7e9;border-radius:9px;padding:12px;margin:10px 0 14px}.tp-code-flex{display:flex;align-items:end;gap:9px;flex-wrap:wrap;margin:8px 0}.tp-code-flex>.field{flex:1;min-width:175px}.tp-code-format-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;align-items:end}.tp-code-format-row label{min-width:0}.tp-code-chip{display:inline-block;background:#133f67;color:white;border-radius:7px;padding:10px;font-weight:800;overflow-wrap:anywhere}.tp-code-example{padding:12px;background:#eff8ff;border-radius:8px;color:#13476b}.tp-code-settings{background:#fff}.tp-code-section{border:1px solid #b9cedf;background:#fff;border-radius:9px;padding:12px 14px;margin:12px 0}.tp-code-section>summary{font-weight:800;color:#17496f;padding:7px 0;cursor:pointer}.tp-code-columns{display:grid;grid-template-columns:1fr 1.3fr;gap:14px}.tp-code-entry{display:flex;align-items:center;gap:8px;justify-content:space-between;border-bottom:1px solid #e3ebf1;padding:8px 0}.tp-code-entry>label.grow{flex:1;min-width:0}.tp-code-entry input[data-code-domain-name]{max-width:320px}.tp-code-check{white-space:nowrap;font-size:12px}.tp-code-check input{width:auto}.tp-code-inline{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.tp-code-inline input{flex:1;min-width:120px}.tp-code-scroll{max-height:330px;overflow:auto;border:1px solid #dae5ec;border-radius:6px;margin:10px 0}.tp-code-table{border-collapse:collapse;width:100%;font-size:12px}.tp-code-table th,.tp-code-table td{padding:8px;border-bottom:1px solid #e3ebf1;text-align:left;vertical-align:middle}.tp-code-table td:first-child,.tp-code-table th:first-child{width:38px}.tp-code-table input{width:18px;height:18px}.tp-code-preview{padding:12px;background:#f4f9fc;border:1px solid #d3e5f1;margin:10px 0;border-radius:8px;overflow-wrap:anywhere}.tp-code-preview:empty{display:none}#tpCodeAutoFields[hidden]{display:none!important}@media(max-width:760px){.tp-code-columns{grid-template-columns:1fr}.tp-code-settings .tp-code-flex{align-items:stretch}.tp-code-settings .tp-code-flex button{width:auto}}@media print{.tp-code-assistant,.tp-code-settings{display:none!important}}</style></head>
+.tp-code-assistant{background:#f0f7fc;border:1px solid #bdd7e9;border-radius:9px;padding:12px;margin:10px 0 14px}.tp-code-flex{display:flex;align-items:end;gap:9px;flex-wrap:wrap;margin:8px 0}.tp-code-flex>.field{flex:1;min-width:175px}.tp-code-format-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;align-items:end}.tp-code-format-row label{min-width:0}.tp-code-chip{display:inline-block;background:#133f67;color:white;border-radius:7px;padding:10px;font-weight:800;overflow-wrap:anywhere}.tp-code-example{padding:12px;background:#eff8ff;border-radius:8px;color:#13476b}.tp-code-settings{background:#fff}.tp-code-section{border:1px solid #b9cedf;background:#fff;border-radius:9px;padding:12px 14px;margin:12px 0}.tp-code-section>summary{font-weight:800;color:#17496f;padding:7px 0;cursor:pointer}.tp-code-columns{display:grid;grid-template-columns:1fr 1.3fr;gap:14px}.tp-code-entry{display:flex;align-items:center;gap:8px;justify-content:space-between;border-bottom:1px solid #e3ebf1;padding:8px 0}.tp-code-entry>label.grow{flex:1;min-width:0}.tp-code-entry input[data-code-domain-name]{max-width:320px}.tp-code-check{white-space:nowrap;font-size:12px}.tp-code-check input{width:auto}.tp-code-inline{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.tp-code-inline input{flex:1;min-width:120px}.tp-code-scroll{max-height:330px;overflow:auto;border:1px solid #dae5ec;border-radius:6px;margin:10px 0}.tp-code-table{border-collapse:collapse;width:100%;font-size:12px}.tp-code-table th,.tp-code-table td{padding:8px;border-bottom:1px solid #e3ebf1;text-align:left;vertical-align:middle}.tp-code-table td:first-child,.tp-code-table th:first-child{width:38px}.tp-code-table input{width:18px;height:18px}.tp-code-preview{padding:12px;background:#f4f9fc;border:1px solid #d3e5f1;margin:10px 0;border-radius:8px;overflow-wrap:anywhere}.tp-code-preview:empty{display:none}#tpCodeAutoFields[hidden]{display:none!important}@media(max-width:760px){.tp-code-columns{grid-template-columns:1fr}.tp-code-settings .tp-code-flex{align-items:stretch}.tp-code-settings .tp-code-flex button{width:auto}}@media print{.tp-code-assistant,.tp-code-settings{display:none!important}}</style><style id="tp-domain-rename-v118">
+.tp-code-domain-wrap{border-bottom:1px solid #e0eaf2;padding:3px 0 9px}
+.tp-code-domain-wrap .tp-code-entry{border-bottom:0;flex-wrap:wrap}
+.tp-code-domain-wrap .tp-code-entry>.grow{flex:1;min-width:150px}
+.tp-code-domain-tag{display:block;color:#63788b;font-size:11px;margin-top:3px;font-weight:500}
+.tp-code-domain-editor{background:#f1f8fe;border:1px solid #a9cbdc;border-radius:9px;padding:11px 13px;margin:0 0 7px}
+.tp-code-domain-editor .field{margin-top:8px}.tp-code-domain-editor input{width:100%;max-width:500px}
+.tp-code-domain-saved{background:#e8f7ed;border:1px solid #99d6af;border-radius:7px;padding:10px;color:#185a36;font-weight:650;font-size:12px}
+@media(max-width:600px){.tp-code-domain-wrap .tp-code-entry{gap:8px}.tp-code-domain-wrap .tp-code-entry>.grow{flex:1 1 100%}}
+</style></head>
 <body data-tp-print-mode="compact">
 <header class="app"><div><strong>Éditeur de TP</strong><br><small>Bac Pro Maintenance des véhicules · V117 — codification personnalisable · photothèque séparée · 2 TP de synthèse intégrés</small></div><div class="spacer"></div><div class="top-actions"><button type="button" class="btn" id="undoTpBtn" disabled title="Annuler la dernière modification">↶ Retour</button><button class="btn" id="importBtn">Ouvrir catalogue</button><button class="btn" id="settingsBtn">Paramètres</button><button class="btn" id="photoLibraryBtn">Photothèque</button><span id="autoCatalogueStatus" role="status" style="font-size:12px;max-width:310px">Sauvegarde auto : chargement…</span><button class="btn" id="exportBtn">Exporter ce TP</button><button class="btn" id="exportAllBtn">Sauvegarder le catalogue</button><button class="btn" type="button" id="studentViewBtn">Vue élève</button><button class="btn primary" id="printBtn">PDF / Imprimer</button><label style="font-size:12px">Impression <select id="tpPrintMode"><option value="compact">Livret A3 · objectif 4 pages A4</option><option value="standard">Standard A4</option></select></label></div><div class="status" id="saveStatus">Chargement…</div></header>
 <main class="workspace">
@@ -97,7 +106,7 @@
  <label class="field">Pas de numérotation<input type="number" min="1" max="1000" class="field-input" data-code-config="pas"></label>
  <label class="field">Numéro initial<input type="number" min="1" max="999999" class="field-input" data-code-config="debut"></label>
  </div><p class="tp-code-example">Exemple : <b id="tpCodeFormatExample">BACPRO-PERSO-010</b></p><button class="btn primary" type="button" id="tpCodeSaveFormat">Enregistrer les paramètres</button></details>
- <div class="tp-code-columns"><details class="tp-code-section"><summary>2. Préfixes / formations</summary><div id="tpCodeFormations"></div><div class="tp-code-inline"><input class="field-input" id="tpCodeNewFormation" placeholder="Ex. MV ou MC"><button type="button" class="btn" id="tpCodeAddFormation">+ Ajouter</button></div></details><details class="tp-code-section"><summary>3. Domaines</summary><p class="field-help">Un domaine utilisé peut être archivé, sans effacer les TP correspondants. Modifier son libellé n’altère pas son code.</p><div id="tpCodeDomaines"></div><div class="tp-code-inline"><input class="field-input" id="tpCodeNewDomain" placeholder="Code : DIAG"><input class="field-input" id="tpCodeNewDomainName" placeholder="Nom : Diagnostic"><button class="btn" type="button" id="tpCodeAddDomain">+ Ajouter</button></div></details></div>
+ <div class="tp-code-columns"><details class="tp-code-section"><summary>2. Préfixes / formations</summary><div id="tpCodeFormations"></div><div class="tp-code-inline"><input class="field-input" id="tpCodeNewFormation" placeholder="Ex. MV ou MC"><button type="button" class="btn" id="tpCodeAddFormation">+ Ajouter</button></div></details><details class="tp-code-section" open><summary>3. Domaines</summary><p class="field-help">Cliquez sur « Modifier » pour changer le nom affiché ou le code du domaine. Les TP existants restent inchangés. Lorsqu’un code change, l’ancien domaine reste archivé pour conserver les références historiques.</p><p class="tp-code-domain-saved" id="tpCodeDomainSaved" role="status" hidden></p><div id="tpCodeDomaines"></div><div class="tp-code-inline"><input class="field-input" id="tpCodeNewDomain" placeholder="Code : DIAG"><input class="field-input" id="tpCodeNewDomainName" placeholder="Nom : Diagnostic"><button class="btn" type="button" id="tpCodeAddDomain">+ Ajouter</button></div></details></div>
  <details class="tp-code-section" open><summary>4. Modifier plusieurs TP avec aperçu</summary><div class="tp-code-flex"><input class="field-input grow" id="tpCodeBulkSearch" placeholder="Rechercher un code ou un titre…"><button class="btn tiny" type="button" id="tpCodeSelectVisible">Sélectionner les affichés</button><button class="btn tiny" type="button" id="tpCodeClearSelection">Tout décocher</button></div><div class="tp-code-scroll"><table class="tp-code-table"><thead><tr><th>✓</th><th>Code actuel</th><th>TP</th><th>État</th></tr></thead><tbody id="tpCodeBulkRows"></tbody></table></div><div id="tpCodeBulkForm" class="tp-code-format-row"><label class="field">Formation cible<select class="field-input" id="tpBulkFormation"></select></label><label class="field">Domaine cible<select class="field-input" id="tpBulkDomain"></select></label><label class="field">Départ<input class="field-input" type="number" min="1" id="tpBulkStart"></label></div><button class="btn primary" type="button" id="tpCodePreviewBulk">Prévisualiser les nouvelles références</button><div id="tpCodeBulkPreview" class="tp-code-preview" aria-live="polite"></div></details>
  <p class="notice">Les TP verrouillés ne peuvent pas être renumérotés. En cas de TP déjà distribués, les copies existantes ne sont jamais renommées automatiquement : une ancienne référence reste dans l’historique JSON.</p>
 </div><div class="notice">L’export JSON du projet conserve les réglages enseignant. L’aperçu imprimé masque toute mention « à préciser » ou « à définir ».</div></div></section></div><div id="tpAuditDialog" class="photo-dialog hidden"><section class="tp-audit-window" role="dialog" aria-modal="true" aria-labelledby="tpAuditHeading"><div class="row"><h2 class="grow" id="tpAuditHeading">Audit du TP</h2><button class="btn tiny" id="refreshTpAudit">Recalculer</button><button class="btn tiny" id="closeTpAudit">Fermer</button></div><div id="tpAuditResult"></div></section></div><div id="tpCategoryDialog" class="photo-dialog hidden"><section class="tp-category-window" role="dialog" aria-modal="true" aria-labelledby="tpCategoryTitle"><div class="row"><h2 id="tpCategoryTitle" class="grow">Catégories de TP</h2><button class="btn tiny" id="closeTpCategories">Fermer</button></div><p>Renommez vos groupes. Supprimer une catégorie conserve tous ses TP.</p><button class="btn" id="createTpCategory">+ Créer une catégorie</button><div id="tpCategoryRows"></div></section></div><input type="file" id="importFile" accept="application/json,.json" hidden><input type="file" id="photoImportFile" accept=".photo,.json,application/json,application/octet-stream" hidden>
@@ -1026,7 +1035,7 @@ $("#photoGrid").onclick=e=>{let b=e.target.closest('[data-photo]');if(!b)return;
 $("#photoAdd").onclick=addSelectedPhotos;
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$("#photoDialog").classList.add('hidden')});
 $("#printBtn").onclick=$("#previewPrint").onclick=printTp;
-/* ===== GESTIONNAIRE DE CODIFICATION DES TP — V117 =====
+/* ===== GESTIONNAIRE DE CODIFICATION DES TP — V118 =====
    Le champ id reste permanent. Les anciens publicId sont conservés dans codeHistory.
    Aucun renommage en masse n'est appliqué sans aperçu et confirmation explicite. */
 const TP_CODE_CONFIG_ID='__TP_EDITOR_CODIFICATION_V117__';
@@ -1035,7 +1044,7 @@ const TP_CODE_DEFAULT={
  domaines:[{code:'FREIN',nom:'Freinage',actif:true},{code:'MOTEUR',nom:'Moteur',actif:true},{code:'LEVAGE',nom:'Levage',actif:true},{code:'SECURITE',nom:'Sécurité',actif:true},{code:'OUTIL',nom:'Outillage',actif:true},{code:'ENTRETIEN',nom:'Entretien',actif:true},{code:'SYNTHESE',nom:'Synthèse',actif:true},{code:'PERSO',nom:'Personnel',actif:true}],
  formation:'BACPRO',domaine:'PERSO',largeur:3,pas:10,debut:10,separateur:'-',ordre:'formation-domaine-numero'
 };
-let tpCodeConfig=structuredClone(TP_CODE_DEFAULT),tpCodeBulkPlan=null,tpCodeBulkSelection=new Set();
+let tpCodeConfig=structuredClone(TP_CODE_DEFAULT),tpCodeBulkPlan=null,tpCodeBulkSelection=new Set(),tpCodeEditingDomain="";
 const tpCodeKey=s=>String(s||'').trim().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9]/g,'');
 const tpCodeText=s=>String(s||'').trim().toUpperCase();
 const tpCodeGood=s=>/^[A-Z0-9][A-Z0-9._-]{2,79}$/.test(s)&&!s.endsWith('-')&&!s.endsWith('_')&&!s.endsWith('.');
@@ -1110,9 +1119,53 @@ function renderTpCodeSettings(){
  f.querySelector('[data-code-config="domaine"]').innerHTML=tpCodeDomainOptions(tpCodeConfig.domaine);
  for(const el of f.querySelectorAll('[data-code-config]'))el.value=tpCodeConfig[el.dataset.codeConfig];
  $('#tpCodeFormations').innerHTML=tpCodeConfig.formations.map(f=>`<div class="tp-code-entry"><b>${esc(f)}</b><button type="button" class="btn tiny warn" data-code-form-remove="${esc(f)}">Retirer</button></div>`).join('');
- $('#tpCodeDomaines').innerHTML=tpCodeConfig.domaines.map(d=>`<div class="tp-code-entry"><label class="grow"><b>${esc(d.code)}</b><input class="field-input" data-code-domain-name="${esc(d.code)}" value="${esc(d.nom)}" aria-label="Nom du domaine ${esc(d.code)}"></label><label class="tp-code-check"><input type="checkbox" data-code-domain-active="${esc(d.code)}" ${d.actif?'checked':''}> Actif</label></div>`).join('');
+ renderTpCodeDomains();
  $('#tpCodeFormatExample').textContent=tpGenerateCode(tpCodeConfig.formation,tpCodeConfig.domaine,Math.min(tpCodeConfig.debut,10**tpCodeConfig.largeur-1));
  renderTpCodeBulk();
+}
+/* Le nom affiché et le code du domaine sont deux informations distinctes.
+   Modifier le code NE renomme JAMAIS les TP déjà enregistrés. L'ancien code
+   demeure disponible en alias archivé pour conserver les TP existants. */
+function renderTpCodeDomains(){
+ const host=$('#tpCodeDomaines');if(!host)return;
+ host.innerHTML=tpCodeConfig.domaines.map(d=>{
+  const inEdit=tpCodeEditingDomain===d.code;
+  const currentCount=catalogue.filter(m=>tpCodeParts(m.publicId)?.domaine===d.code).length;
+  return `<div class="tp-code-domain-wrap"><div class="tp-code-entry">
+    <div class="grow"><b>${esc(d.nom)}</b><small class="tp-code-domain-tag">Code : <code>${esc(d.code)}</code> · ${currentCount} TP référencé(s)${d.actif?'':' · Archivé'}</small></div>
+    <button type="button" class="btn tiny ${inEdit?'active':''}" data-code-domain-edit="${esc(d.code)}" aria-expanded="${inEdit?'true':'false'}">✎ Modifier</button>
+    <label class="tp-code-check"><input type="checkbox" data-code-domain-active="${esc(d.code)}" ${d.actif?'checked':''}> Actif</label>
+   </div>${inEdit?`<div class="tp-code-domain-editor" id="tpCodeDomainRenameForm" data-old-domain="${esc(d.code)}">
+    <label class="field">Nom affiché du domaine<input class="field-input" id="tpCodeRenameLabel" maxlength="70" value="${esc(d.nom)}" placeholder="Ex. Freinage et contrôle"></label>
+    <label class="field">Code utilisé dans les futurs TP<input class="field-input" id="tpCodeRenameKey" maxlength="22" value="${esc(d.code)}" spellcheck="false" placeholder="Ex. FREINAGE"></label>
+    <p class="field-help">Changer uniquement le nom ne modifie aucun code de TP. Si tu changes le code, le nouveau sera utilisé à l’avenir et l’ancien sera archivé pour préserver les références déjà diffusées.</p>
+    <div class="tp-code-inline"><button type="button" class="btn primary" data-code-domain-save="${esc(d.code)}">Enregistrer le changement</button><button type="button" class="btn" data-code-domain-cancel>Annuler</button></div>
+   </div>`:''}</div>`;
+ }).join('');
+}
+async function tpRenameDomain(oldCode,newRawCode,newRawLabel){
+ const current=tpCodeConfig.domaines.find(x=>x.code===oldCode);
+ if(!current)throw Error('Domaine introuvable. Actualisez la liste.');
+ const newCode=tpCodeKey(newRawCode),newLabel=String(newRawLabel||'').trim();
+ if(newCode.length<2||newCode.length>22)throw Error('Code du domaine : entre 2 et 22 lettres ou chiffres.');
+ if(!newLabel||newLabel.length>70)throw Error('Renseignez un nom de domaine de 1 à 70 caractères.');
+ if(newCode!==oldCode&&tpCodeConfig.domaines.some(x=>x.code===newCode))throw Error('Ce code est déjà associé à un domaine, même archivé. Choisissez-en un autre.');
+ if(current.nom===newLabel&&oldCode===newCode){tpCodeEditingDomain='';renderTpCodeDomains();return;}
+ const changeCode=newCode!==oldCode;
+ const count=catalogue.filter(m=>tpCodeParts(m.publicId)?.domaine===oldCode).length;
+ if(changeCode&&!confirm('Remplacer le code du domaine '+oldCode+' par '+newCode+' ?\\n\\n'+count+' TP portent actuellement ce domaine. Leurs références et identifiants ne seront PAS modifiés. L’ancien domaine sera conservé en archive pour les retrouver.\\n\\nContinuer ?'))return;
+ const domaines=[];
+ for(const d of tpCodeConfig.domaines){
+  if(d.code!==oldCode){domaines.push(d);continue;}
+  if(changeCode){domaines.push({...d,actif:false});domaines.push({code:newCode,nom:newLabel,actif:true});}
+  else domaines.push({...d,nom:newLabel});
+ }
+ const next={...tpCodeConfig,domaines,domaine:(changeCode&&tpCodeConfig.domaine===oldCode)?newCode:tpCodeConfig.domaine};
+ await tpSaveCodeConfig(next); // stockage durable avant fermeture du formulaire
+ tpCodeEditingDomain='';renderTpCodeDomains();
+ const msg=changeCode?'Code du domaine modifié : '+oldCode+' → '+newCode+'. Ancien code conservé en archive.':'Nom du domaine « '+oldCode+' » modifié : '+newLabel;
+ status(msg);
+ const note=$('#tpCodeDomainSaved');if(note){note.textContent=msg;note.hidden=false;}
 }
 function tpCodeSelectedMissions(){return catalogue.filter(m=>tpCodeBulkSelection.has(m.id)&&!m.editorLocked)}
 function renderTpCodeBulk(){const search=($('#tpCodeBulkSearch')?.value||'').toLocaleLowerCase('fr');
@@ -1160,6 +1213,9 @@ function tpInstallCodeEvents(){
  $('#manageTpCodes').onclick=()=>openEditorSettings('codification');
  const panel=$('#tpCodeSettingsPanel');
  panel.addEventListener('click',async e=>{const b=e.target.closest('button');if(!b)return;try{
+ if(b.dataset.codeDomainEdit){tpCodeEditingDomain=tpCodeEditingDomain===b.dataset.codeDomainEdit?'':b.dataset.codeDomainEdit;renderTpCodeDomains();$('#tpCodeRenameLabel')?.focus();return}
+ if(b.hasAttribute('data-code-domain-cancel')){tpCodeEditingDomain='';renderTpCodeDomains();return}
+ if(b.dataset.codeDomainSave){const current=$('#tpCodeDomainRenameForm');if(!current||current.dataset.oldDomain!==b.dataset.codeDomainSave)throw Error('Rouvrez le formulaire de modification.');await tpRenameDomain(b.dataset.codeDomainSave,$('#tpCodeRenameKey').value,$('#tpCodeRenameLabel').value);return}
  if(b.id==='tpCodeSaveFormat'){let raw={...tpCodeConfig};for(const x of $('#tpCodeForm').querySelectorAll('[data-code-config]'))raw[x.dataset.codeConfig]=x.value;await tpSaveCodeConfig(raw);return}
  if(b.id==='tpCodeAddFormation'){const code=tpCodeKey($('#tpCodeNewFormation').value);if(code.length<2||code.length>18)throw Error('Préfixe : entre 2 et 18 lettres ou chiffres.');await tpSaveCodeConfig({...tpCodeConfig,formations:[...tpCodeConfig.formations,code]});$('#tpCodeNewFormation').value='';return}
  if(b.dataset.codeFormRemove){const key=b.dataset.codeFormRemove;if(tpCodeConfig.formations.length<2)throw Error('Conservez au moins un préfixe.');if(tpCodeConfig.formation===key)throw Error('Choisissez d’abord un autre préfixe par défaut.');if(catalogue.some(m=>tpCodeText(m.publicId).includes(key)))throw Error('Préfixe utilisé dans le catalogue : conservez-le pour la compatibilité.');await tpSaveCodeConfig({...tpCodeConfig,formations:tpCodeConfig.formations.filter(x=>x!==key)});return}
@@ -1170,7 +1226,6 @@ function tpInstallCodeEvents(){
  if(b.id==='tpBulkConfirm'){await tpCommitBulkPlan();return}
  }catch(err){alert(err.message)}});
  panel.addEventListener('change',async e=>{const el=e.target;try{
- if(el.dataset.codeDomainName){const code=el.dataset.codeDomainName;const domain=tpCodeConfig.domaines.map(d=>d.code===code?{...d,nom:el.value.trim()||d.nom}:d);await tpSaveCodeConfig({...tpCodeConfig,domaines:domain});return}
  if(el.dataset.codeDomainActive){const code=el.dataset.codeDomainActive;if(!el.checked&&tpCodeConfig.domaine===code)throw Error('Choisissez d’abord un autre domaine par défaut.');const domaines=tpCodeConfig.domaines.map(d=>d.code===code?{...d,actif:el.checked}:d);await tpSaveCodeConfig({...tpCodeConfig,domaines});return}
  if(el.matches('#tpCodeBulkRows input[data-bulk-tp]')){if(el.checked)tpCodeBulkSelection.add(el.dataset.bulkTp);else tpCodeBulkSelection.delete(el.dataset.bulkTp)}if(el.matches('#tpCodeBulkRows input[data-bulk-tp],#tpBulkFormation,#tpBulkDomain,#tpBulkStart')){tpCodeBulkPlan=null;$('#tpCodeBulkPreview').textContent='La sélection a changé. Cliquez sur Prévisualiser.';}
  }catch(err){alert(err.message);renderTpCodeSettings()}});
@@ -1208,7 +1263,7 @@ window.addEventListener('beforeprint',fitPrintBlocks);window.addEventListener('a
 </script>
 <script id="catalogue-collapse-runtime-v74">function toggleCatalogue(){const workspace=document.querySelector('.workspace'),button=document.getElementById('catalogueToggle'),collapsed=workspace.classList.toggle('catalogue-collapsed');button.setAttribute('aria-expanded',String(!collapsed));button.textContent=collapsed?'› Catalogue':'‹';button.title=collapsed?'Ouvrir le catalogue':'Replier le catalogue';button.setAttribute('aria-label',button.title);button.focus()}document.getElementById('catalogueToggle').addEventListener('click',toggleCatalogue);</script>
 </body></html>
-<script id="editor-v20-compat-v118">window.TP_EDITOR_COMPAT={editorVersion:'V117',targetSuite:'V197',schema:'evaluation.tp.v1',professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',reader:'Lecteur_TP_Eleve_V197.html'};console.info('Editeur TP V55 — compatible suite V197');</script>
+<script id="editor-v20-compat-v118">window.TP_EDITOR_COMPAT={editorVersion:'V118',targetSuite:'V197',schema:'evaluation.tp.v1',professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',reader:'Lecteur_TP_Eleve_V197.html'};console.info('Editeur TP V55 — compatible suite V197');</script>
 
 <!-- Suite V197 — intégration officielle de l'Éditeur V116 photothèque séparée -->
 <script id="editor-suite-v197">
@@ -1218,7 +1273,7 @@ window.TP_SUITE_V197={
   suite:'Évaluation · Charge Atelier · TP · Correction',
   version:'V197',
   role:'EDITEUR',
-  editorVersion:'V117',
+  editorVersion:'V118',
   projectSchema:'evaluation.tp.v1',
   distributionFormat:'FDMAHY_TP_SYSTEM/4.1',
   professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',
@@ -1226,14 +1281,14 @@ window.TP_SUITE_V197={
   photoLibrary:'Phototheque_Atelier_TP.js'
 };
 window.TP_EDITOR_COMPAT={
-  editorVersion:'V117',targetSuite:'V197',schema:'evaluation.tp.v1',
+  editorVersion:'V118',targetSuite:'V197',schema:'evaluation.tp.v1',
   professorApp:'Evaluation_Charge_Atelier_TP_Correction_V197.html',
   reader:'Lecteur_TP_Eleve_V197.html',photoLibrary:'Phototheque_Atelier_TP.js'
 };
 function stamp(){
-  document.title='Éditeur de TP V117 — Suite V197 — Bac Pro Maintenance des véhicules';
+  document.title='Éditeur de TP V118 — Suite V197 — Bac Pro Maintenance des véhicules';
   const s=document.querySelector('header.app small');
-  if(s)s.textContent='Bac Pro Maintenance des véhicules · V117 — photothèque séparée · 2 TP de synthèse intégrés · Suite V197';
+  if(s)s.textContent='Bac Pro Maintenance des véhicules · V118 — photothèque séparée · 2 TP de synthèse intégrés · Suite V197';
   const b=document.getElementById('exportBtn');
   if(b){b.textContent='Exporter le TP prêt pour le portail';}
 }
